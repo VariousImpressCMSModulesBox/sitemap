@@ -5,11 +5,11 @@
 *
 * File: xml_google.php
 *
-* @copyright		http://www.xoops.org/ The XOOPS Project
-* @copyright		XOOPS_copyrights.txt
-* @copyright		http://www.impresscms.org/ The ImpressCMS Project
-* @license			GNU General Public License (GPL)
-*					a copy of the GNU license is enclosed.
+* @copyright	http://www.xoops.org/ The XOOPS Project
+* @copyright	XOOPS_copyrights.txt
+* @copyright	http://www.impresscms.org/ The ImpressCMS Project
+* @license		GNU General Public License (GPL)
+*				a copy of the GNU license is enclosed.
 * ----------------------------------------------------------------------------------------------------------
 * @package		Sitemap 
 * @since		1.30
@@ -78,6 +78,6 @@ $xoopsTpl -> assign( 'show_subcategoris', icms::$module -> config['show_subcateg
 
 $xoopsTpl -> assign( 'this', array( 'mods' => icms::$module -> getVar( 'dirname' ), 'name' => icms::$module -> getVar( 'name' ) ) );
 
-if ( is_object( @$xoopsLogger ) ) $xoopsLogger -> activated = false;
+if ( is_object( @$icms_core_Logger ) ) $icms_core_Logger -> activated = false;
 $xoopsTpl -> display( 'db:sitemap_xml_google.html' );
 ?>
