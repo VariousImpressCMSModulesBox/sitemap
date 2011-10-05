@@ -1,0 +1,51 @@
+<{if $sitemapstyle == 1}>
+
+<{strip}>
+
+<div align="center" style="margin:10px 0;">
+  <img src="<{$icms_url}>/modules/sitemap/images/logo.gif" alt="" />
+</div>
+
+<{$msgs}>
+
+<br />
+
+<div align="right">
+  <img src="<{$icms_url}>/modules/sitemap/images/map.gif" alt="" style="vertical-align:text-bottom;" />&nbsp;
+  <a href="<{$icms_url}>/"><{$smarty.const._MD_SITEMAP_HOME}></a>
+</div>
+
+<div style="width: 100%;">
+	<{foreach name=i item=module from=$sitemap.modules}>
+		<{include file="db:sitemap_inc_eachmodule.html"}>
+	<{/foreach}>
+</div>
+
+<{/strip}>
+
+<{else}>
+
+<link rel="stylesheet" type="text/css" href="<{$icms_url}>/modules/sitemap/slickmap.css" />
+<{strip}>
+
+<div align="center" style="margin:10px 0;">
+  <img src="<{$icms_url}>/modules/sitemap/images/logo.gif" alt="" />
+</div>
+
+<{$msgs}>
+
+<br /><br />
+
+<div class="sitemap">
+	<ul id="primaryNav" class="col<{$sitemap.modules|@count}>">
+		<li id="home"><a href="<{$icms_url}>/"><{$smarty.const._MD_SITEMAP_HOME}></a></li>
+		
+		<{foreach name=i item=module from=$sitemap.modules}>
+		  <{include file="db:sitemap_inc_eachmodule_slickmap.html"}>
+		<{/foreach}>
+	</ul>
+</div>
+
+<{/strip}>
+
+<{/if}>
