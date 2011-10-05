@@ -1,0 +1,36 @@
+<{if $module.name}>
+  <li>
+  	<a href="<{$icms_url}>/modules/<{$module.directory}>/"><{$module.name}></a>
+  <{if $module.parent|@count == 0}>
+  	</li>
+  <{else}>
+		 <ul>
+		  	<{foreach item=parent from=$module.parent}>
+		      <li>
+		      	<a href="<{$icms_url}>/modules/<{$module.directory}>/<{$parent.url}>">
+		      	<{$parent.title}>
+				</a>
+		    
+			   <{if $parent.child|@count == 0}>
+			   </li>
+			   <{else}>
+					<ul>
+		      		<{foreach item=child from=$parent.child}>
+			        	<li>
+			        		<a href="<{$icms_url}>/modules/<{$module.directory}>/<{$child.url}>">
+			        			<{$child.title}>
+							</a>
+						</li>
+		      		<{/foreach}>
+					</ul>
+			   </li>
+		       <{/if}>
+		  	<{/foreach}>
+
+			<{foreach item=sublink from=$module.sublinks}>
+				<li class="sublink"><a href="<{$sublink.url}>"><{$sublink.name}></a></li>
+			<{/foreach}>
+ 		</ul>
+	</li>
+  <{/if}>
+<{/if}>

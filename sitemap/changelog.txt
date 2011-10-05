@@ -1,0 +1,133 @@
+=====================================
+20 September 2011 - Version 1.40
+=====================================
+- Converted to an ImpressCMS 1.3 module
+- Improved administration
+- New icons
+- Disabled all-time guest feature
+- Cleaned up plugins folder
+- Added option to choose between default and Slickmap style
+
+Added plugins for ICMS modules:
+  - ccenter
+  - imaudit
+  - imblogging
+  - imfaq
+  - imfeeding
+  - imglossary
+  - imlinks
+  - impression
+  - library
+  - mytube
+  - portfolio
+  - tadgallery
+  - umfrage
+  - xquiz
+  
+Added languages:
+  - Dutch
+  
+  
+=====================================
+Old changelog
+=====================================
+1.30 2007-03-12
+- Aarked as stable
+- Added language files
+-- schinese (thx chnwalkman) 1.30a
+-- japaneseutf 1.30a
+
+1.30beta 2006-11-08
+- Aodified compatibitity with Cube 2.1
+- Removed "usermenu"
+- Modified templates radically
+- Modified sitemap_xml_google.html based on "Sitemaps XML format" (thx kimono)
+
+1.29 2006-10-01
+- Modified the action when xml_google.php is directly accessed 1.29
+- Added plugins
+-- liaise (thx monsuke) 1.29a
+-- debaser (thx proshack) 1.29a
+- Added languages
+-- persian (thx voltan) 1.29a
+- Fixed some languages 1.29b
+
+1.28 2006-09-26
+- Modified compatibility with D3 module system.
+
+1.27 2006-09-05
+- Modified compatibility with 2.0.15 (xoops.org) xml_google fatal error
+- Modified compatibility with 2.0.14 (xoops.org) xml_google with debug mode (thx DuGris)
+- Added plugins
+-- formulaire (thx philou) 1.27a
+-- pages (thx philou) 1.27a
+- Added and modified languages
+-- catalan (thx yuji) 1.27b
+-- portuguesebr (thx yuji) 1.27b
+-- spanish (thx yuji) 1.27b
+
+1.26 2006-07-17
+- Added plugin-system for D3 modules (eg. bulletin)
+- Updated language files
+-- spanish (thx David)
+
+1.25 2006-03-02
+- Modified the compatibility between xml_google.php and XOOPS 2.2.4
+- Modified the compatibility with PHP >= 4.4.1
+- Added a plugin
+-- extcal (thx bonnaudet eric)
+- Added language files
+-- german (thx rene) 1.25a
+
+1.24 2005-12-18
+- Fixed a bug login block is always displayed by enabling sitemap block (thx okamoto)
+- Updated language files
+-- french (thx marco)
+-- portuguesebr (thx yuji)
+
+1.23 2005-12-2
+- Fixed fatal errors in xml_google.php with some conditions (thx centurier)
+- Modified the module icon (thx Argon)
+- Modified language files
+-- rename poski to polish (requested by Tomasz in Xoops.pl Support Team)
+- Fixed plugins
+-- myAds
+-- sections
+
+1.22 2005-11-14
+- Updated myblocksadmin and mymenu
+- Remove CRs in some php files
+- Added a language file
+-- polish (thx kurak_bu)
+- Updated language files
+-- tchinese (thx Sheng-Hung, Huang)
+-- french (thx marco)
+
+1.21 2005-09-04
+- Fixed configs are not reflected to the block (thx shige3)
+- Modified to use $sitemap_configs instead of $xoopsModuleConfig directly
+- Fixed some language constants (added language/blocks.php)
+
+1.20 2005-09-03
+- Added sitemap_block
+- Modified main template
+
+1.13 2005-07-19
+- Modified alltime-guest-mode (thx dasdan)
+
+1.12 2005-06-20
+- Modified xml_google.php as root controller (copy it to XOOPS_ROOT_PATH/)
+- Added a plugin
+-- pbboard (thx karedokx)
+
+1.11 2005-06-15
+- Modified xml_google.php for Google sitemaps
+- Modified sitemap_index.html (thx flying.tux)
+- Update langage files
+-- french (thx marco)
+
+1.10 2005-06-12
+- Added xml_google.php for Google sitemaps
+
+1.00 2005-04-14
+- Modified the structure of the directory for plugins
