@@ -5,11 +5,11 @@
 *
 * File: icms_version.php
 *
-* @copyright		http://www.xoops.org/ The XOOPS Project
-* @copyright		XOOPS_copyrights.txt
-* @copyright		http://www.impresscms.org/ The ImpressCMS Project
-* @license			GNU General Public License (GPL)
-*					a copy of the GNU license is enclosed.
+* @copyright	http://www.xoops.org/ The XOOPS Project
+* @copyright	XOOPS_copyrights.txt
+* @copyright	http://www.impresscms.org/ The ImpressCMS Project
+* @license		GNU General Public License (GPL)
+*				a copy of the GNU license is enclosed.
 * ----------------------------------------------------------------------------------------------------------
 * @package		Sitemap 
 * @since		1.30
@@ -29,9 +29,9 @@ if ( file_exists( ICMS_ROOT_PATH . '/language/'. $icmsConfig['language'] . '/mod
 
 $modversion['name']				= _MI_SITEMAP_NAME;
 $modversion['version']			= '1.40';
-$modversion['date'] 			= '20 September 2011';
-$modversion['status'] 			= 'Final';
-$modversion['status_version'] 	= 'Final';
+$modversion['date'] 			= 'xx xxxxx 2011';
+$modversion['status'] 			= '';
+$modversion['status_version'] 	= '';
 $modversion['author']			= 'chanoir';
 $modversion['image']			= 'images/sitemap_slogo.png';
 $modversion['iconsmall']		= 'images/icon_small.png'; 
@@ -50,10 +50,10 @@ $modversion['people']['developers'][] = '<a href="http://community.impresscms.or
 $modversion['people']['other'][] = '<a href="http://astuteo.com/slickmap/" target="_blank">Astuteo</a> (SlickMap CSS)';
 
 //	** If Release Candidate **
-// $modversion['warning'] = _MI_WARNING_RC;
+$modversion['warning'] = _MI_WARNING_RC;
 
 //	** If Final  **
-$modversion['warning'] = _MI_WARNING_FINAL;
+// $modversion['warning'] = _MI_WARNING_FINAL;
 
 $modversion['hasAdmin'] = 1;
 $modversion['adminindex'] = 'admin/index.php';
