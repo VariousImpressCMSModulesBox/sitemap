@@ -28,10 +28,10 @@ if ( file_exists( ICMS_ROOT_PATH . '/language/'. $icmsConfig['language'] . '/mod
 } 
 
 $modversion['name']				= _MI_SITEMAP_NAME;
-$modversion['version']			= '1.40';
+$modversion['version']			= '1.41';
 $modversion['date'] 			= 'xx xxxxx 2011';
-$modversion['status'] 			= '';
-$modversion['status_version'] 	= '';
+$modversion['status'] 			= 'RC-1';
+$modversion['status_version'] 	= 'RC-1';
 $modversion['author']			= 'chanoir';
 $modversion['image']			= 'images/sitemap_slogo.png';
 $modversion['iconsmall']		= 'images/icon_small.png'; 
