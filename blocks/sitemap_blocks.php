@@ -28,7 +28,7 @@ function b_sitemap_show( $options ) {
 	$module_handler = icms::handler( 'icms_module' );
 	$module =& $module_handler -> getByDirname( 'sitemap' );
 	$config_handler = icms::$config;
-	icms::$module -> config = $config_handler -> getConfigsByCat( 0, $module -> getVar( 'mid' ) );
+	$sitemapModuleConfig = $config_handler -> getConfigsByCat( 0, $module -> getVar( 'mid' ) );
 
 	$block = array();
 
@@ -42,8 +42,8 @@ function b_sitemap_show( $options ) {
 	$block['cols'] = $cols;
 	$block['div_width'] = 90.0 / $cols;
 	$block['sitemap'] = $sitemap;
-	$block['msgs'] = $myts -> displayTarea( icms::$module -> config['msgs'], 1 );
-	$block['show_subcategoris'] = icms::$module -> config['show_subcategoris'];
+	$block['msgs'] = icms_core_DataFilter::checkVar( $sitemapModuleConfig['msgs'], 'html' );
+	$block['show_subcategoris'] = $sitemapModuleConfig['show_subcategoris'];
 	return $block;
 }
 

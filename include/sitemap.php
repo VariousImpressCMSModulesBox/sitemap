@@ -24,15 +24,20 @@
 function sitemap_show() {
 	global $icmsConfig;
 	$plugin_dir = ICMS_ROOT_PATH . '/modules/sitemap/plugins/';
+	
+	$module_handler = icms::handler( 'icms_module' );
+	$module =& $module_handler -> getByDirname( 'sitemap' );
+	$config_handler = icms::$config;
+	$sitemapModuleConfig = $config_handler -> getConfigsByCat( 0, $module -> getVar( 'mid' ) );
 
 	// invisible weights
 	$invisible_weights = array();
-	if ( trim( icms::$module -> config['invisible_weights'] ) !== '' ) {
-		$invisible_weights = explode( ',' , icms::$module -> config['invisible_weights'] );
+	if ( $sitemapModuleConfig['invisible_weights'] !== '' ) {
+		$invisible_weights = explode( ',' , $sitemapModuleConfig['invisible_weights'] );
 	}
 
 	// invisible dirnames
-	$invisible_dirnames = empty( icms::$module -> config['invisible_dirnames'] ) ? '' : str_replace( ' ' , '' , icms::$module -> config['invisible_dirnames'] ) . ',';
+	$invisible_dirnames = empty( icms::$module -> config['invisible_dirnames'] ) ? '' : str_replace( ' ' , '' , $sitemapModuleConfig['invisible_dirnames'] ) . ',';
 
 	$block = array();
 
@@ -148,6 +153,12 @@ function sitemap_show() {
 }
 
 function sitemap_get_categoires_map( $table, $id_name, $pid_name, $title_name, $url, $order='' ) {
+
+	$module_handler = icms::handler( 'icms_module' );
+	$module =& $module_handler -> getByDirname( 'sitemap' );
+	$config_handler = icms::$config;
+	$sitemapModuleConfig = $config_handler -> getConfigsByCat( 0, $module -> getVar( 'mid' ) );
+	
 	$mytree = new icms_view_Tree( $table, $id_name, $pid_name );	
 	$sitemap = array();
 	$i = 0;
@@ -160,7 +171,7 @@ function sitemap_get_categoires_map( $table, $id_name, $pid_name, $title_name, $
 		$sitemap['parent'][$i]['id'] = $catid;
 		$sitemap['parent'][$i]['title'] = icms_core_DataFilter::htmlSpecialChars( $name );
 		$sitemap['parent'][$i]['url'] = $url.$catid;
-		if ( icms::$module -> config['show_subcategoris'] ) { 
+		if ( $sitemapModuleConfig['show_subcategoris'] == 1 ) { 
 			$j = 0;
 			$child_ary = $mytree -> getChildTreeArray( $catid, $order );
 			foreach ( $child_ary as $child ) {
