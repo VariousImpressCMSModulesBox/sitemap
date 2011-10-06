@@ -40,7 +40,10 @@ if ( ! defined( 'SITEMAP_ROOT_CONTROLLER_LOADED' ) ) {
 	require '../../mainfile.php';
 }
 
-$sitemap_configs = $xoopsModuleConfig;
+	$module_handler = icms::handler( 'icms_module' );
+	$module =& $module_handler -> getByDirname( 'sitemap' );
+	$config_handler = icms::$config;
+	$sitemapModuleConfig = $config_handler -> getConfigsByCat( 0, $module -> getVar( 'mid' ) );
 
 if ( function_exists( 'mb_http_output' ) ) {
 	mb_http_output('pass');
@@ -56,11 +59,11 @@ $sitemap = sitemap_show();
 
 $xoopsTpl -> assign( 'lastmod', gmdate( 'Y-m-d\TH:i:s\Z' ) ); // TODO
 $xoopsTpl -> assign( 'sitemap', $sitemap );
-$xoopsTpl -> assign( 'show_subcategoris', $sitemap_configs['show_subcategoris'] );
+$xoopsTpl -> assign( 'show_subcategoris', $sitemapModuleConfig['show_subcategoris'] );
 
 $xoopsTpl -> assign( 'this', array( 'mods' => icms::$module -> getVar( 'dirname' ), 'name' => icms::$module -> getVar( 'name' ) ) );
 
-icms::$logger -> disableLogger();
+icms::$logger->disableLogger();
 
 $xoopsTpl -> display( 'db:sitemap_xml_google.html' );
 ?>
