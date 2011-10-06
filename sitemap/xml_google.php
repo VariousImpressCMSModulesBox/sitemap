@@ -78,6 +78,6 @@ $xoopsTpl -> assign( 'show_subcategoris', icms::$module -> config['show_subcateg
 
 $xoopsTpl -> assign( 'this', array( 'mods' => icms::$module -> getVar( 'dirname' ), 'name' => icms::$module -> getVar( 'name' ) ) );
 
-if ( is_object( @$icms_core_Logger ) ) $icms_core_Logger -> activated = false;
+if ( is_object( $icms_core_Logger ) ) $icms_core_Logger -> activated = false;
 $xoopsTpl -> display( 'db:sitemap_xml_google.html' );
 ?>
