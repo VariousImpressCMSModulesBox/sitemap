@@ -2,6 +2,7 @@
 xx xxxxx 2011 - Version 1.41
 =====================================
 - Fixed block
+- Fixed xml_google.php
 - Improved imGlossary plugin
 
 
