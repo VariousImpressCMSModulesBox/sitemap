@@ -23,7 +23,7 @@
 
 function b_sitemap_show( $options ) {
 
-	$cols = empty( $options[0] ) ? 1 : intval( $options[0] ) ;
+//	$cols = empty( $options[0] ) ? 1 : intval( $options[0] ) ;
 
 	$module_handler = icms::handler( 'icms_module' );
 	$module =& $module_handler -> getByDirname( 'sitemap' );
@@ -39,19 +39,19 @@ function b_sitemap_show( $options ) {
 	$myts =& MyTextSanitizer::getInstance();
 
 	$block['this']['mods'] = 'sitemap';
-	$block['cols'] = $cols;
+//	$block['cols'] = $cols;
 //	$block['div_width'] = 90.0 / $cols;
-	$block['divstyle'] = '"float: left; width: ' . 90.0 / $cols . '%; margin: 10px;"';
+//	$block['divstyle'] = '"float: left; width: ' . 90.0 / $cols . '%; margin: 5px;"';
 	$block['sitemapstyle'] = $sitemapModuleConfig['css_style'];
 	$block['sitemap'] = $sitemap;
 	if (  $sitemapModuleConfig['msgs'] ) {
-	$block['msgs'] = '<hr noshade="noshade" color="#e8e6e2" />'.icms_core_DataFilter::checkVar( $sitemapModuleConfig['msgs'], 'html' ).'<hr noshade="noshade" color="#e8e6e2" />';
+	$block['msgs'] = '<div style="margin:10px 0px;"><hr noshade="noshade" color="#e8e6e2" />'.icms_core_DataFilter::checkVar( $sitemapModuleConfig['msgs'], 'html' ).'<hr noshade="noshade" color="#e8e6e2" /></div>';
 	}
 	$block['show_subcategoris'] = $sitemapModuleConfig['show_subcategoris'];
 	return $block;
 }
 
 function b_sitemap_edit( $options ) {
-	return _MB_SITEMAP_COLS . ': <input type="text" size="2" maxlength="2" name="options[0]" value="' . intval( $options[0] ) . '" />' ;
+//	return _MB_SITEMAP_COLS . ': <input type="text" size="2" maxlength="2" name="options[0]" value="' . intval( $options[0] ) . '" />' ;
 }
 ?>
