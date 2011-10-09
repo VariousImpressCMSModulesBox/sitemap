@@ -17,29 +17,24 @@ function cc_changeDisplay(id){
 
 <{if $block.sitemapstyle == 1}>
 
-<div style="margin:10px 0;"><{$block.msgs}></div>
+<{$block.msgs}>
 <div align="right">
   <img src="<{$icms_url}>/modules/sitemap/images/map.gif" alt="" style="vertical-align:text-bottom;" />&nbsp;
   <a href="<{$icms_url}>/"><{$smarty.const._MB_SITEMAP_HOME}></a>
 </div>
 
 <{foreach name=i item=module from=$block.sitemap.modules}>
-  <{if $block.cols > 0}>
-    <{include file="db:sitemap_inc_eachmodule.html" div_style=$block.divstyle}>
-  <{else}>
-    <{include file="db:sitemap_inc_eachmodule.html" div_style="margin:2px;"}>
-  <{/if}>
+  <{include file="db:sitemap_inc_eachmodule.html"}>
 <{/foreach}>
 
 <{else}>
 
 <link rel="stylesheet" type="text/css" href="<{$icms_url}>/modules/sitemap/slickmap.css" />
-<div style="margin:10px 0;"><{$block.msgs}></div>
+<{$block.msgs}>
 <br /><br />
 <div class="sitemap">
 	<ul id="primaryNav" class="col<{$sitemap.modules|@count}>">
-		<li id="home"><a href="<{$icms_url}>/"><{$smarty.const._MB_SITEMAP_HOME}></a></li>
-		
+		<li id="home"><a href="<{$icms_url}>/"><{$smarty.const._MB_SITEMAP_HOME}></a></li>	
 		<{foreach name=i item=module from=$block.sitemap.modules}>
 		  <{include file="db:sitemap_inc_eachmodule_slickmap.html"}>
 		<{/foreach}>
