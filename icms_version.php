@@ -29,7 +29,7 @@ if ( file_exists( ICMS_ROOT_PATH . '/language/'. $icmsConfig['language'] . '/mod
 
 $modversion['name']				= _MI_SITEMAP_NAME;
 $modversion['version']			= '1.41';
-$modversion['date'] 			= 'xx xxxxx 2011';
+$modversion['date'] 			= '10 October 2011';
 $modversion['status'] 			= 'RC-1';
 $modversion['status_version'] 	= 'RC-1';
 $modversion['author']			= 'chanoir';
@@ -79,7 +79,7 @@ $modversion['blocks'][] = array (	'file' => 'sitemap_blocks.php',
 									'name' => _MI_SITEMAP_BLOCKNAME ,
 									'description' => _MI_SITEMAP_BLOCKDESC ,
 									'show_func' => 'b_sitemap_show',
-									'edit_func' => 'b_sitemap_edit',
+									'edit_func' => '',
 									'template' => 'sitemap_block_show.html',
 									'options' => '1' );
 
