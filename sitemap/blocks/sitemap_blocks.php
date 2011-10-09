@@ -40,16 +40,18 @@ function b_sitemap_show( $options ) {
 
 	$block['this']['mods'] = 'sitemap';
 	$block['cols'] = $cols;
-	$block['div_width'] = 90.0 / $cols;
+//	$block['div_width'] = 90.0 / $cols;
+	$block['divstyle'] = '"float: left; width: ' . 90.0 / $cols . '%; margin: 10px;"';
+	$block['sitemapstyle'] = $sitemapModuleConfig['css_style'];
 	$block['sitemap'] = $sitemap;
-	$block['msgs'] = icms_core_DataFilter::checkVar( $sitemapModuleConfig['msgs'], 'html' );
+	if (  $sitemapModuleConfig['msgs'] ) {
+	$block['msgs'] = '<hr noshade="noshade" color="#e8e6e2" />'.icms_core_DataFilter::checkVar( $sitemapModuleConfig['msgs'], 'html' ).'<hr noshade="noshade" color="#e8e6e2" />';
+	}
 	$block['show_subcategoris'] = $sitemapModuleConfig['show_subcategoris'];
 	return $block;
 }
 
 function b_sitemap_edit( $options ) {
-	return '
-		' . _MB_SITEMAP_COLS . ': <input type="text" size="2" maxlength="2" name="options[0]" value="' . intval( $options[0] ) . '" />
-	' ;
+	return _MB_SITEMAP_COLS . ': <input type="text" size="2" maxlength="2" name="options[0]" value="' . intval( $options[0] ) . '" />' ;
 }
 ?>
