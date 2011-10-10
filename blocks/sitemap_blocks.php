@@ -36,7 +36,7 @@ function b_sitemap_show( $options ) {
 
 	$sitemap = sitemap_show();
 
-	$myts =& MyTextSanitizer::getInstance();
+//	$myts =& MyTextSanitizer::getInstance();
 
 	$block['this']['mods'] = 'sitemap';
 //	$block['cols'] = $cols;
