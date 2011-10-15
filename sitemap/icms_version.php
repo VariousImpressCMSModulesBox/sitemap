@@ -29,9 +29,9 @@ if ( file_exists( ICMS_ROOT_PATH . '/language/'. $icmsConfig['language'] . '/mod
 
 $modversion['name']				= _MI_SITEMAP_NAME;
 $modversion['version']			= '1.41';
-$modversion['date'] 			= '10 October 2011';
-$modversion['status'] 			= 'RC-1';
-$modversion['status_version'] 	= 'RC-1';
+$modversion['date'] 			= '16 October 2011';
+$modversion['status'] 			= 'Final';
+$modversion['status_version'] 	= 'Final';
 $modversion['author']			= 'chanoir';
 $modversion['image']			= 'images/sitemap_slogo.png';
 $modversion['iconsmall']		= 'images/icon_small.png'; 
@@ -50,10 +50,10 @@ $modversion['people']['developers'][] = '<a href="http://community.impresscms.or
 $modversion['people']['other'][] = '<a href="http://astuteo.com/slickmap/" target="_blank">Astuteo</a> (SlickMap CSS)';
 
 //	** If Release Candidate **
-$modversion['warning'] = _MI_WARNING_RC;
+// $modversion['warning'] = _MI_WARNING_RC;
 
 //	** If Final  **
-// $modversion['warning'] = _MI_WARNING_FINAL;
+$modversion['warning'] = _MI_WARNING_FINAL;
 
 $modversion['hasAdmin'] = 1;
 $modversion['adminindex'] = 'admin/index.php';
