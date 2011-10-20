@@ -20,6 +20,15 @@
 						<a href="<{$icms_url}>/modules/<{$module.directory}>/<{$child.url}>"><{$child.title}></a>
 					</div>
 				<{/foreach}>
+			<{elseif $block.show_subcategoris}>
+				<{foreach item=child from=$parent.child}>
+					<div style="padding-left: 8px; font-size: .9em; height: 16px; overflow: hidden;">
+						<img src="<{$icms_url}>/modules/sitemap/images/bar<{$child.image}>.gif" alt="" style="vertical-align:text-bottom;" />
+						<img src="<{$icms_url}>/modules/sitemap/images/bar.gif" alt="" style="vertical-align:text-bottom;" />
+						<img src="<{$icms_url}>/modules/sitemap/images/cat2.gif" alt="" style="vertical-align:text-bottom;" />
+						<a href="<{$icms_url}>/modules/<{$module.directory}>/<{$child.url}>"><{$child.title}></a>
+					</div>
+				<{/foreach}>
 			<{/if}>
 
 		<{/foreach}>

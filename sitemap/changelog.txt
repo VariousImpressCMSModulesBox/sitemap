@@ -1,4 +1,9 @@
 =====================================
+xx xxxxx 2011 - Version 1.4x
+=====================================
+- Fixed: sub-categories not shown in block with default template
+
+=====================================
 16 October 2011 - Version 1.41
 =====================================
 - Fixed block
