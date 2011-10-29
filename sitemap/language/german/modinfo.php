@@ -32,4 +32,12 @@ define('_MI_WARNING_FINAL', "This module comes as is, without any guarantees wha
 define('_MI_WARNING_RC', "This module comes as is, without any guarantees whatsoever. This module is a <em>Release Candidate</em> and should <u>NOT</u> be used on a production web site. The module is still under active development and its use is under your own responsibility, which means the author is not responsible.");
 
 define('_MI_SITEMAP_MODULE_GO','gehe zum Modul');
+
+define('_MI_CHANGEFREQ', 'Change frequency');
+define('_MI_CHANGEFREQ_DSC','How frequently the page is likely to change. This value provides general information to search engines and may not correlate exactly to how often they crawl the page. For more information: <a href="http://www.sitemaps.org/protocol.php#changefreqdef" target="_blank">Sitemap.org</a><br />This setting is for the Google sitemap file only!');
+define('_MI_CHANGEFREQ_HOURLY', 'hourly');
+define('_MI_CHANGEFREQ_DAILY', 'daily');
+define('_MI_CHANGEFREQ_WEEKLY', 'weekly');
+define('_MI_CHANGEFREQ_MONTHY', 'monthly');
+define('_MI_CHANGEFREQ_YEARLY', 'yearly');
 ?>
