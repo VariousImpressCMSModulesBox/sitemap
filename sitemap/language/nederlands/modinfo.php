@@ -49,4 +49,14 @@ define('_MI_SELECT_SLICKMAP', 'Slickmap');
 
 define('_MI_WARNING_FINAL', 'Deze module komt zoals hij is, zonder welke garantie dan ook. Ondanks dat de status van deze module geen beta is, is de module nog steeds in actieve ontwikkeling. Deze uitgave kan worden gebruikt in een actieve/online website of in een productieve omgeving, maar het gebruik valt volledig onder uw eigen verantwoordelijkheid, dit betekent dat de auteur niet verantwoordelijk is.');
 define('_MI_WARNING_RC', 'Deze module komt zoals hij is, zonder welke garantie dan ook. Deze module is een uitgave kandidaat en dient niet te worden gebruikt in een actieve/online website of in een productieve omgeving. De module is nog steeds in actieve ontwikkeling en het gebruik ervan valt onder uw eigen verantwoordelijkheid, dit betekent dat de auteur niet verantwoordelijk is.');
+
+define('_MI_SITEMAP_MODULE_GO','Start module');
+
+define('_MI_CHANGEFREQ', 'Change frequency');
+define('_MI_CHANGEFREQ_DSC','How frequently the page is likely to change. This value provides general information to search engines and may not correlate exactly to how often they crawl the page. <a href="http://www.sitemaps.org/protocol.php#changefreqdef" target="_blank">Sitemap.org</a>');
+define('_MI_CHANGEFREQ_HOURLY', 'per uur');
+define('_MI_CHANGEFREQ_DAILY', 'dagelijks');
+define('_MI_CHANGEFREQ_WEEKLY', 'wekelijks');
+define('_MI_CHANGEFREQ_MONTHY', 'maandelijks');
+define('_MI_CHANGEFREQ_YEARLY', 'jaarlijks');
 ?>

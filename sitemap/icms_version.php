@@ -119,4 +119,12 @@ $modversion['config'][] = array (	'name' => 'css_style',
 									'valuetype' => 'int',
 									'default' => 1,
 									'options' => array( '_MI_SELECT_DEFAULT' => 1, '_MI_SELECT_SLICKMAP' => 2 ) );
+									
+$modversion['config'][] = array (	'name' => 'changefreq',
+									'title' => '_MI_CHANGEFREQ',
+									'description' => '_MI_CHANGEFREQ_DSC',
+									'formtype' => 'select',
+									'valuetype' => 'text',
+									'default' => 'monthly',
+									'options' => array( '_MI_CHANGEFREQ_HOURLY' => 'hourly', '_MI_CHANGEFREQ_DAILY' => 'daily', '_MI_CHANGEFREQ_WEEKLY' => 'weekly', '_MI_CHANGEFREQ_MONTHY' => 'monthly', '_MI_CHANGEFREQ_YEARLY' => 'yearly' ) );
 ?>
