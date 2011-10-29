@@ -59,4 +59,6 @@ define('_MI_CHANGEFREQ_DAILY', 'dagelijks');
 define('_MI_CHANGEFREQ_WEEKLY', 'wekelijks');
 define('_MI_CHANGEFREQ_MONTHY', 'maandelijks');
 define('_MI_CHANGEFREQ_YEARLY', 'jaarlijks');
+define('_MI_PRIORITY', 'Prioriteit');
+define('_MI_PRIORITY_DSC','Deze waarde heeft geen invloed op hoe uw pagina\'s zijn in vergelijking met pagina\'s op andere sites, het laat alleen de zoekmachines weten welke pagina\'s u het belangrijkst vindt voor de crawlers. Voor meer informatie: <a href="http://www.sitemaps.org/protocol.php#prioritydef" target="_blank">Sitemap.org</a><br />Deze instelling is alleen voor het Google sitemap bestand!');
 ?>
