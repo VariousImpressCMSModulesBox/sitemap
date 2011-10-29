@@ -28,10 +28,10 @@ if ( file_exists( ICMS_ROOT_PATH . '/language/'. $icmsConfig['language'] . '/mod
 } 
 
 $modversion['name']				= _MI_SITEMAP_NAME;
-$modversion['version']			= '1.41';
-$modversion['date'] 			= '16 October 2011';
-$modversion['status'] 			= 'Final';
-$modversion['status_version'] 	= 'Final';
+$modversion['version']			= '1.42';
+$modversion['date'] 			= 'xx xx 2011';
+$modversion['status'] 			= '';
+$modversion['status_version'] 	= '';
 $modversion['author']			= 'chanoir';
 $modversion['image']			= 'images/sitemap_slogo.png';
 $modversion['iconsmall']		= 'images/icon_small.png'; 
@@ -50,10 +50,10 @@ $modversion['people']['developers'][] = '<a href="http://community.impresscms.or
 $modversion['people']['other'][] = '<a href="http://astuteo.com/slickmap/" target="_blank">Astuteo</a> (SlickMap CSS)';
 
 //	** If Release Candidate **
-// $modversion['warning'] = _MI_WARNING_RC;
+$modversion['warning'] = _MI_WARNING_RC;
 
 //	** If Final  **
-$modversion['warning'] = _MI_WARNING_FINAL;
+//$modversion['warning'] = _MI_WARNING_FINAL;
 
 $modversion['hasAdmin'] = 1;
 $modversion['adminindex'] = 'admin/index.php';
@@ -127,4 +127,12 @@ $modversion['config'][] = array (	'name' => 'changefreq',
 									'valuetype' => 'text',
 									'default' => 'monthly',
 									'options' => array( '_MI_CHANGEFREQ_HOURLY' => 'hourly', '_MI_CHANGEFREQ_DAILY' => 'daily', '_MI_CHANGEFREQ_WEEKLY' => 'weekly', '_MI_CHANGEFREQ_MONTHY' => 'monthly', '_MI_CHANGEFREQ_YEARLY' => 'yearly' ) );
+									
+$modversion['config'][] = array (	'name' => 'priority',
+									'title' => '_MI_PRIORITY',
+									'description' => '_MI_PRIORITY_DSC',
+									'formtype' => 'select',
+									'valuetype' => 'text',
+									'default' => 0.8,
+									'options' => array( '0.0' => 0.0, '0.1' => 0.1, '0.2' => 0.2, '0.3' => 0.3, '0.4' => 0.4, '0.5' => 0.5, '0.6' => 0.6, '0.7' => 0.7, '0.8' => 0.8, '0.9' => 0.9, '1.0' => 1.0 ) );
 ?>

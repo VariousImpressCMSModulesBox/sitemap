@@ -61,6 +61,7 @@ $xoopsTpl -> assign( 'lastmod', gmdate( 'Y-m-d\TH:i:s\Z' ) ); // TODO
 $xoopsTpl -> assign( 'sitemap', $sitemap );
 $xoopsTpl -> assign( 'show_subcategoris', $sitemapModuleConfig['show_subcategoris'] );
 $xoopsTpl -> assign( 'changefreq', $sitemapModuleConfig['changefreq'] );
+$xoopsTpl -> assign( 'priority', $sitemapModuleConfig['priority'] );
 
 $xoopsTpl -> assign( 'this', array( 'mods' => icms::$module -> getVar( 'dirname' ), 'name' => icms::$module -> getVar( 'name' ) ) );
 
