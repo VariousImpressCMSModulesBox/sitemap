@@ -52,8 +52,8 @@ define('_MI_WARNING_RC', 'Deze module komt zoals hij is, zonder welke garantie d
 
 define('_MI_SITEMAP_MODULE_GO','Start module');
 
-define('_MI_CHANGEFREQ', 'Change frequency');
-define('_MI_CHANGEFREQ_DSC','How frequently the page is likely to change. This value provides general information to search engines and may not correlate exactly to how often they crawl the page. <a href="http://www.sitemaps.org/protocol.php#changefreqdef" target="_blank">Sitemap.org</a>');
+define('_MI_CHANGEFREQ', 'Interval');
+define('_MI_CHANGEFREQ_DSC', 'Hoe vaak verandert de pagina. Deze waarde bevat algemene informatie voor zoekmachines en kan niet precies overeenkomen met hoe vaak ze de pagina bezoeken. Voor meer informatie:<a href="http://www.sitemaps.org/protocol.php#changefreqdef" target="_blank">Sitemap.org</a><br />Deze instelling is alleen voor het Google sitemap bestand!');
 define('_MI_CHANGEFREQ_HOURLY', 'per uur');
 define('_MI_CHANGEFREQ_DAILY', 'dagelijks');
 define('_MI_CHANGEFREQ_WEEKLY', 'wekelijks');
