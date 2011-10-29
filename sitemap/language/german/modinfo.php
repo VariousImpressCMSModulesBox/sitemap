@@ -40,4 +40,6 @@ define('_MI_CHANGEFREQ_DAILY', 'daily');
 define('_MI_CHANGEFREQ_WEEKLY', 'weekly');
 define('_MI_CHANGEFREQ_MONTHY', 'monthly');
 define('_MI_CHANGEFREQ_YEARLY', 'yearly');
+define('_MI_PRIORITY', 'Priority');
+define('_MI_PRIORITY_DSC','This value does not affect how your pages are compared to pages on other sites, it only lets the search engines know which pages you deem most important for the crawlers. For more information: <a href="http://www.sitemaps.org/protocol.php#prioritydef" target="_blank">Sitemap.org</a><br />This setting is for the Google sitemap file only!');
 ?>
