@@ -29,9 +29,9 @@ if ( file_exists( ICMS_ROOT_PATH . '/language/'. $icmsConfig['language'] . '/mod
 
 $modversion['name']				= _MI_SITEMAP_NAME;
 $modversion['version']			= '1.42';
-$modversion['date'] 			= 'xx xx 2011';
-$modversion['status'] 			= '';
-$modversion['status_version'] 	= '';
+$modversion['date'] 			= 'xx xx 2013';
+$modversion['status'] 			= 'Beta';
+$modversion['status_version'] 	= 'Beta';
 $modversion['author']			= 'chanoir';
 $modversion['image']			= 'images/sitemap_slogo.png';
 $modversion['iconsmall']		= 'images/icon_small.png'; 
@@ -40,20 +40,17 @@ $modversion['dirname']			= 'sitemap';
 
 $modversion['support_site_url'] = 'http://community.impresscms.org/modules/newbb/viewforum.php?forum=9';
 $modversion['support_site_name']= 'ImpressCMS Community Forum - Modules Support';
-$modversion['submit_bug'] 		= 'http://sourceforge.net/apps/trac/impresscms/newticket?type=defect';
+$modversion['submit_bug'] 		= 'https://impresscmsdev.assembla.com/spaces/impresscmsaddons/support/tickets/new';
 
 $modversion['description']		= 'Automatically sitemapping module made by chanoir. If you need the feature of Google sitemaps, copy modules/sitemap/xml_google.php to your ICMS root, and register ICMS_URL/xml_google.php to Google.';
 
 // 	** Contributors **
-$modversion['people']['developers'][] = '<a href="http://community.impresscms.org/userinfo.php?uid=179" target="_blank">McDonald</a>&nbsp;&nbsp;<span style="font-size: smaller;">( pietjebell31 [at] hotmail [dot] com )</span>';
+$modversion['people']['developers'][] = '<a href="http://community.impresscms.org/userinfo.php?uid=179" target="_blank">McDonald</a>&nbsp;&nbsp;<span style="font-size: smaller;">( pietjebell31 [at] hotmail [dot] com )</span>, fiammybe';
 
 $modversion['people']['other'][] = '<a href="http://astuteo.com/slickmap/" target="_blank">Astuteo</a> (SlickMap CSS)';
 
 //	** If Release Candidate **
-$modversion['warning'] = _MI_WARNING_RC;
-
-//	** If Final  **
-//$modversion['warning'] = _MI_WARNING_FINAL;
+$modversion['warning'] = _MI_WARNING_BETA;
 
 $modversion['hasAdmin'] = 1;
 $modversion['adminindex'] = 'admin/index.php';
