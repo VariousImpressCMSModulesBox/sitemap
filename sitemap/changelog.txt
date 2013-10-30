@@ -1,10 +1,10 @@
 =====================================
-xx xxxxx 2011 - Version 1.42
+xx xxxxx 2013 - Version 1.42
 =====================================
 - Fixed: sub-categories not shown in block with default template
 - Added option to set changefreq in xml_google_php
 - Added option to set priority in xml_google_php
-
+- xml_google.php is now automatically copied to the root on install, and removed on uninstall
 
 =====================================
 16 October 2011 - Version 1.41

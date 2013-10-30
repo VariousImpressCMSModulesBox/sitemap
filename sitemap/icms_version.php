@@ -61,6 +61,12 @@ $modversion['adminmenu'] = 'admin/menu.php';
 
 $modversion['hasMain'] = 1;
 
+
+// Installation/Upgrade/uninstall
+$modversion['onUpdate'] = 'include/onupdate.inc.php';
+$modversion['onInstall'] = 'include/onupdate.inc.php';
+$modversion['onUninstall'] = 'include/onupdate.inc.php';
+
 // Templates
 $modversion['templates'][] = array (	'file' => 'sitemap_inc_eachmodule.html',
 										'description' => '' );
